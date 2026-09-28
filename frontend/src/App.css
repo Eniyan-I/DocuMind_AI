@@ -1,0 +1,32 @@
+.centered-container {
+  width: 500px;
+  text-align: center;
+  background-color: aqua;    
+  background: transparent;
+  backdrop-filter: blur(100px);
+  border: 1px white solid;
+  border-radius: 15px;
+  padding-bottom: 20px;
+}
+
+.btn{
+    margin-top: 20px;
+    background-color: blue;
+    width: 130px;
+    height:50px;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+
+.inp-chat{
+  margin-top: 600px;
+  text-align: center;
+}
+.chat{
+  width: 600px;
+  height: 60px;
+  border-radius: 15px;
+  border:2px black solid;
+  padding-left: 30px;
+  font-size: large;
+}
