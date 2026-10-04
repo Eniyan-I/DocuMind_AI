@@ -12,7 +12,7 @@ os.environ["GOOGLE_API_KEY"] = os.getenv('GOOGLE_API_KEY')
 def rag_res(retriever, question):
     if not retriever:
         return "Error: No retriever available. Please upload a valid PDF first."
-    llm = ChatGoogleGenerativeAI(model='gemini-2.5-flash')
+    llm = ChatGoogleGenerativeAI(model='gemini-3.8-flash')
     
     prompt = ChatPromptTemplate.from_messages([
         (
