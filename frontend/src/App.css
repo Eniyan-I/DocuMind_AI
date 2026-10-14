@@ -1,0 +1,54 @@
+.file_input{
+  border: 3px dashed grey;
+  width:500px;
+  height: 250px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(249, 249, 251);
+}
+.submit-btn{
+  margin-top: 20px;
+  width:150px;
+  height: 40px;
+  border-radius :10px;
+  border: 0px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+.submit-btn:hover{
+  background-color: whitesmoke;
+  box-shadow: 0 0 20px whitesmoke;
+}
+.submit-btn:active{
+  transform: scale(0.98);
+  box-shadow: 0 0 40px whitesmoke;
+}
+.output{
+  font-size: medium;
+  margin-top: 50px;
+  height:550px;
+  width: 700px;
+  overflow-y: auto;
+  border-radius: 15px;
+  scrollbar-width:none;
+  color: white;
+  text-align: left;
+}
+.txt_input{
+  font-size: medium;
+  margin-top: 10px;
+  width: 600px;
+  height: 40px;
+  border-radius: 25px;
+  border: 0px;
+  padding-left: 20px;
+  color: white;
+  box-shadow: 0 0 10px rgb(249, 249, 251);
+}
+.ai-msg{
+text-align: left;
+}
+.user-msg{
+  text-align: right;
+  color: lightblue;
+}
