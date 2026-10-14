@@ -41,6 +41,11 @@
                            │
                            ▼
                   ┌──────────────────┐
+                  │       JEV        │
+                  └────────┬─────────┘
+                           │
+                           ▼ 
+                  ┌──────────────────┐
                   │   Google Gemini  │
                   │       LLM        │
                   └────────┬─────────┘
@@ -64,6 +69,8 @@ LangChain processes the query and performs retrieval against the knowledge base.
 
 Relevant document chunks are retrieved using semantic similarity.
 
+The retrieved chunks were passed to jev for finding top k results
+
 The retrieved context is passed to the Google Gemini LLM.
 
 Gemini generates a context-aware response.
@@ -80,8 +87,7 @@ DocuMind_AI/
 │        ├── App.js
 │        ├── App.css
 │        ├──index.js
-│        ├──index.css
-│        └──App.test.js
+│        └──index.css
 ├── backend/
 │   ├── main.py
 │   ├──Dockerfile
