@@ -24,7 +24,7 @@ function App(){
     const formData = new FormData();
     formData.append('file',SelectedFile);
     try{
-      const response=await fetch('https://whole-dogs-like.loca.lt/upload_pdf',{
+      const response=await fetch('http://127.0.0.1:8000/upload_pdf',{
         method:'POST',
         body:formData
       })
@@ -49,7 +49,7 @@ function App(){
         { sender: 'user', text: Question }
       ]);
       try{
-      const response=await fetch('https://whole-dogs-like.loca.lt/chat',{
+      const response=await fetch('http://127.0.0.1:8000/chat',{
         method:'POST',
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify({qn:Question})
