@@ -28,7 +28,7 @@ def processing_pdf():
   split_doc=splitter.split_documents(document)
 
   embeddings=GoogleGenerativeAIEmbeddings(model='gemini-embedding-2-preview',
-            google_api_key=GOOGLE_API_KEY)
+            api_key=GOOGLE_API_KEY)
   
   db=FAISS.from_documents(split_doc,embeddings)
   retriever=db.as_retriever(search_kwargs={'k':10})
@@ -78,7 +78,7 @@ async def rag_res(question):
   context = "\n\n".join(context_parts)
 
   llm = ChatGoogleGenerativeAI(model='gemini-3.5-flash-lite',
-            google_api_key=GOOGLE_API_KEY)
+            api_key=GOOGLE_API_KEY)
   
   prompt = ChatPromptTemplate.from_messages([
       (
